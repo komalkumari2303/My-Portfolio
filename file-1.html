@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KHUSHI Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#FFF5F7; /* Soft Pastel Rose Background */
+    color:#4A3F43; /* Dark Charcoal Pink for readable text */
+}
+
+/* Navbar */
+nav{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    height:70px;
+    background:rgba(255, 255, 255, 0.9);
+    box-shadow:0 2px 15px rgba(255, 105, 180, 0.15);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.left{
+    font-size:1.7rem;
+    font-weight:bold;
+    color:#D14785; /* Elegant Rose Gold Deep Pink */
+}
+
+nav ul{
+    display:flex;
+}
+
+nav ul li{
+    list-style:none;
+    margin:0 20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:#665A5E;
+    font-weight: 500;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#D14785;
+}
+
+/* Hero Section */
+.firstsection{
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    min-height:80vh;
+    padding:50px;
+}
+
+.leftsection{
+    width:45%;
+    font-size:2.8rem;
+    color: #33272B;
+}
+
+.leftsection div{
+    margin-top:10px;
+}
+
+.purple{
+    color:#FF62A5; /* Vibrant Pastel Pink */
+    font-weight:bold;
+}
+
+#purple{
+    color:#B83B74; /* Deep Berry Rose */
+    font-weight:bold;
+}
+
+#element{
+    color:#9C46B1; /* Lovely Violet/Orchid */
+    font-size:2rem;
+    font-weight: 500;
+}
+
+.buttons{
+    margin-top:35px;
+}
+
+.btn{
+    padding:12px 28px;
+    margin-right:15px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(45deg, #FF62A5, #9C46B1); /* Cute Pink-Purple Gradient */
+    color:white;
+    cursor:pointer;
+    font-size:16px;
+    font-weight: 500;
+    box-shadow: 0 4px 15px rgba(255, 98, 165, 0.3);
+    transition:.3s ease-in-out;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow: 0 6px 20px rgba(255, 98, 165, 0.5);
+    background:linear-gradient(45deg, #9C46B1, #FF62A5);
+}
+
+.rightsection img{
+    width:400px;
+    filter: drop-shadow(0px 10px 15px rgba(217, 130, 181, 0.3));
+}
+
+hr{
+    border:0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, #FFC0CB, transparent);
+    margin:30px 80px;
+}
+
+/* About Section */
+.about-section{
+    padding:80px 8%;
+    text-align:center;
+}
+
+.heading{
+    font-size:3rem;
+    color:#B83B74;
+    margin-bottom:25px;
+    position: relative;
+}
+
+.about-text{
+    max-width:900px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.8;
+    color:#5C4D52;
+    margin-bottom:50px;
+}
+
+.highlight{
+    color:#E63980;
+    font-weight:bold;
+}
+
+/* Skills */
+.skill-container{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.skill-box{
+    width:300px;
+    min-height:280px;
+    padding:30px 25px;
+    border-radius:20px;
+    background: white;
+    border: 1px solid #FFE4ED;
+    box-shadow:0 5px 20px rgba(217, 130, 181, 0.1);
+    transition:.4s ease;
+}
+
+.skill-box:hover{
+    transform:translateY(-10px);
+    box-shadow:0 10px 25px rgba(255, 98, 165, 0.25);
+    border-color: #FFB6C1;
+}
+
+.skill-box h2{
+    color:#8A2053; /* Deep Maroonish Rose */
+    margin-bottom:15px;
+    font-size: 1.5rem;
+}
+
+.skill-box p{
+    line-height:1.7;
+    color:#665A5E;
+    font-size: 15px;
+}
+
+/* Contact Section (Fixed & Color Corrected) */
+.contact-section{
+    padding:80px 8%;
+    text-align:center;
+    background: linear-gradient(135deg, #FFF0F5, #FFE4E1); /* Soft Blush Backdrop */
+    width: 90%;
+    max-width: 1100px;
+    border-radius: 30px;
+    margin: 60px auto;
+    border: 1px solid #FFD1E1;
+    box-shadow: 0 10px 30px rgba(217, 130, 181, 0.1);
+}
+
+.contact-container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 2fr)); 
+    gap:25px;
+    margin-top:40px;
+}
+
+.contact-box{
+    background: rgba(255, 255, 255, 0.8);
+    border:1px solid #FFE4ED;
+    border-radius:20px;
+    padding:30px 20px;
+    transition:.4s;
+    word-wrap: break-word; 
+    box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+}
+
+.contact-box h3{
+    margin-bottom:15px;
+    color:#B83B74; /* Fixed from harsh Cyan to Soft Berry */
+}
+
+.contact-box p{
+    color: #5C4D52;
+}
+
+.contact-box a{
+    color:#9C46B1;
+    text-decoration:none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.contact-box a:hover{
+    color:#FF62A5;
+    text-decoration: underline;
+}
+
+.email:hover, .phone:hover, .linkedin:hover, .github:hover{
+    transform: translateY(-8px);
+    box-shadow:0 8px 25px rgba(255, 98, 165, 0.2);
+    border-color: #FF62A5;
+}
+
+/* Footer */
+footer{
+    background:#8A2053; /* Deep Rich Rose-Wine Color */
+    text-align:center;
+    padding:25px;
+    margin-top:50px;
+}
+
+footer p{
+    color:#FFE4ED;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+/* Responsive */
+@media(max-width:900px){
+    .firstsection{
+        flex-direction:column;
+        text-align:center;
+        padding: 30px 20px;
+    }
+    .leftsection{
+        width:100%;
+        font-size:2rem;
+    }
+    .rightsection img{
+        width:280px;
+        margin-top:40px;
+    }
+    hr {
+        margin: 20px 30px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+    <div class="left">Khushi Portfolio</div>
+    <div class="right">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+</header>
+
+<!-- Hero Section -->
+<section class="firstsection">
+    <div class="leftsection">
+        Hi, My Name is <span class="purple">KHUSHI</span>
+        <div>and I am a <span id="purple">Web Developer</span></div>
+        <span id="element"></span>
+        <div class="buttons">
+            <button class="btn">Download Resume</button>
+            <button class="btn">Visit Github</button>
+        </div>
+    </div>
+    <div class="rightsection">
+        <img src="https://cdn-icons-png.flaticon.com/512/1055/1055687.png" alt="Girl Developer">
+    </div>
+</section>
+
+<hr>
+
+<!-- About Section -->
+<section class="about-section" id="about">
+    <h1 class="heading">About Me</h1>
+    <p class="about-text">
+        Hello! My name is <span class="highlight">KHUSHI</span>. 
+        I am a passionate Web Developer and Data Entry Operator. 
+        I have knowledge of HTML, CSS, Bootstrap and JavaScript. 
+        I enjoy building responsive websites and creating attractive user interfaces.
+        <br><br>
+        My goal is to become a professional Full Stack Developer and continuously improve my technical skills. I also have experience in Data Entry, MS Excel, Google Sheets and data management tasks.
+    </p>
+
+    <!-- Skills Container -->
+    <div class="skill-container" id="skills">
+        <div class="skill-box">
+            <h2>HTML</h2>
+            <p>Semantic HTML (header, nav, section, footer)<br>Forms & Validation<br>Tables & Lists<br>Multimedia<br>SEO-Friendly Structure</p>
+        </div>
+
+        <div class="skill-box">
+            <h2>CSS</h2>
+            <p>Flexbox & Grid Layout<br>Animations & Transitions<br>Responsive Design<br>Media Queries<br>Hover Effects</p>
+        </div>
+
+        <div class="skill-box">
+            <h2>Bootstrap</h2>
+            <p>Grid System<br>Responsive Navbar<br>Cards & Components<br>Bootstrap Forms<br>Utilities & Spacing</p>
+        </div>
+
+        <div class="skill-box">
+            <h2>JavaScript</h2>
+            <p>DOM Manipulation<br>Event Handling<br>Form Validation<br>Arrays & Objects<br>API Fetch & JSON</p>
+        </div>
+
+        <div class="skill-box">
+            <h2>Data Entry</h2>
+            <p>MS Excel Management<br>Data Cleaning & Formatting<br>Spreadsheet Reporting<br>Fast Typing & Accuracy</p>
+        </div>
+
+        <div class="skill-box">
+            <h2>Tally ERP9/Prime</h2>
+            <p>Company Creation<br>Ledger Management<br>Voucher Entry<br>GST Accounting<br>Inventory Management</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section (Moved outside footer & styled beautifully) -->
+<section class="contact-section" id="contact">
+    <h1 class="heading" style="font-size: 2.5rem;">Contact Me</h1>
+    <div class="contact-container">
+        <div class="contact-box email">
+            <h3>Email</h3>
+            <p><a href="mailto:yourgmail@gmail.com">yourgmail@gmail.com</a></p>
+        </div>
+
+        <div class="contact-box phone">
+            <h3>Mobile</h3>
+            <p>+91 XXXXX XXXXX</p>
+        </div>
+
+        <div class="contact-box linkedin">
+            <h3>LinkedIn</h3>
+            <p><a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+        </div>
+
+        <div class="contact-box github">
+            <h3>GitHub</h3>
+            <p><a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2026 Khushi Portfolio | All Rights Reserved</p>
+</footer>
+
+<!-- Typed.js Script -->
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+var typed = new Typed('#element', {
+    strings: [
+        'Web Developer 💖',
+        'HTML Developer 🌸',
+        'JavaScript Learner ✨',
+        'Data Entry Operator 💼'
+    ],
+    typeSpeed:50,
+    backSpeed:50,
+    loop:true
+});
+</script>
+
+</body>
+</html>
