@@ -1,0 +1,701 @@
+<doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css" integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+<style>
+    #menubar{
+    background-color: white;
+    padding-top: 20px;
+    height: 60px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    top: 0px;
+    position: sticky;
+    top:0px;
+    width: 100%;   
+    border-radius: 10px;    
+    font-family: sans-serif;    
+    }   
+    
+    
+    #logo{
+        top: -20px;
+    }
+    
+    .item{
+        color:black;
+        height: 60px;
+        display:inline;
+        margin-left:20px;
+        margin-right:20px ;
+        font-weight:bold;
+        position: relative;
+        top: -40px;
+    }
+    
+    
+    .item:hover{
+        color:red;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+  
+    
+    #menubar-2{
+        padding-top: 8px;
+        height: 40px;
+        box-sizing: border-box;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color:lightpink;
+        position:sticky;
+        top:60px;
+        font-family: sans-serif;
+    }
+    
+    
+    .item-2{
+        color: black;
+        height: 40px;
+        display: inline;
+        margin-left: 18px;
+        margin-right: 18px;
+        border-radius: 10px;
+        top: 60px;
+        position: sticky;
+    }
+    
+    
+    .item-2:hover{
+        color:red;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    
+    
+    .image{
+        height: 500px;
+        display:grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        grid-column-gap: 10px;
+        border-radius: 20px;
+        background-color: bisque;
+    }
+    
+    
+    .image-2{
+        border-radius: 20px;
+    }
+    
+    
+    #box{
+        height: 100px;
+        display: grid;
+    }
+    
+    
+    .box-1{
+        height: 400px;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+        grid-column-gap: 5px;
+        grid-template-rows: 50px 350px;
+        margin-left:35px;
+        background-color: antiquewhite;
+    }
+    
+    
+    .a{
+        height: 80px;
+        display: grid;
+        font-weight: bold;
+        padding-top: 25px;
+        box-sizing: border-box;
+    }
+    
+    
+    #c{
+        text-align: center;
+        box-sizing: border-box;
+        font-weight: bold;
+        padding-top: 10px;
+         grid-column-start: 1;
+        grid-column-end: 12;
+    }
+    
+    
+    .komal{
+        height: 300px;
+        display: grid;
+    }
+    
+    .m{
+        height: 150px;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+        grid-column-gap: 10px;
+    }
+    
+    
+    .o{
+        display: grid;
+        height: 250px;
+        border-radius: 20px;
+    }
+    
+    .q{
+        display: grid;
+        height: 300px;
+        grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+        grid-column-gap: 10px;
+        grid-template-rows: 200px 100px;
+        background-color:lightsteelblue;
+        
+    }
+    
+    
+    .y{
+        font-weight: bold;
+        padding-top: 10px;
+        box-sizing: border-box;
+        
+    }
+    
+    .of{
+        height: 100px;
+        display: grid;
+    }
+    
+    
+    .off{
+        height: 200px;
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr 3fr 3fr ;
+        grid-column-gap: 20px;   
+        margin-left: 300px;
+    }
+    
+    .let{
+        height: 200px;
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+        grid-column-gap: 20px;
+        margin-left: 300px;
+    }
+    
+    .not{
+        border-radius: 10px;
+        color: white;
+        height: 40px;
+        text-align: center;
+        font-weight: bold;
+        padding-top: 10px;
+        box-sizing: border-box;
+        width: 200px;
+        margin-left: 550px;
+         cursor: pointer;
+        display:grid;
+    
+    }
+    
+    .the{
+        height: 200px;
+        display: grid;
+        
+    }
+    
+    .export{
+        height: 400px;
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr 3fr 3fr;
+        grid-column-gap: 10px;
+        
+    }
+    
+    .help{
+        height: 30px;
+        padding-top: 10px;
+        display: grid;
+        width: 1000px;
+        color: darkviolet;
+        border-radius: 10px;
+        text-align: center;
+        margin-left: 150px;
+        font-weight: bold;
+        
+    }
+    
+    .subject{
+        display: grid;
+        font-weight: bold;
+        color: black;
+        font-family: sans-serif;
+    }
+    
+    .all{
+        height: 300px;
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+        grid-column-gap: 10px;
+        
+    }
+    
+    .line{
+        height: 100px;
+        display: grid;
+        border-radius: 10px;
+    }
+    
+
+    .day{
+        height: 200px;
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr;
+    }
+    
+    .w{
+        font-weight: bold;
+        color: white;
+        background-color: darkgray;
+        margin-bottom: 40px;
+        padding-left: 40px;
+        box-sizing: border-box;
+        display: grid;
+    }
+    
+    .sales{
+        display: grid;
+        height: 450px;
+        grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
+        background-color: gray;
+    }
+    
+    .date{
+        color: white;
+        font-weight: bold;
+        display: grid;
+        margin-left: 50px;
+        padding-top: 50px;
+    }
+    
+    #email{
+        position: relative;
+        top: 63px;
+        right: 30px;
+    }
+    
+    #home{
+    position: relative;
+        top: 80px;
+        right: 30px;
+    }
+    
+    #share{
+        position: relative;
+        top:60px;
+        right: 30px;
+    }
+    
+    .date:hover{
+        color:royalblue;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+      
+    .w:hover{
+        color: royalblue;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+
+</style>    
+</head>    
+<body>
+
+
+
+    
+<div id="menubar">
+    <div id="logo" class="item"><img src="https://cdn.iconscout.com/icon/free/png-256/free-nykaa-logo-icon-svg-download-png-2822953.png?f=webp" height="55px" width="100px"></div>
+<div class="item">categories</div>
+<div class="item">brands</div>
+<div class="item">luxe</div>
+<div class="item">Nykaa Fashion</div>
+<div class="item">Beauty Advice</div>    
+    
+</div>    
+    
+<div id="menubar-2">
+<div class="item-2"> makeup</div>   
+<div class="item-2">skin</div>    
+<div class="item-2">hair</div>    
+<div class="item-2">appliances</div>    
+<div class="item-2">Bath & Body</div>    
+<div class="item-2">Natural</div>    
+<div class="item-2">mom & baby</div>    
+<div class="item-2">Health & Wellness</div>    
+<div class="item-2">fragrance</div>    
+<div class="item-2">Fashion Selects</div>    
+<div class="item-2">Men</div>    
+
+    
+</div>    
+    
+<div class="image">
+<div class="image-2">
+<img src="https://images-static.nykaa.com/creatives/cc063358-3900-4785-bd9b-f886febc65e2/default.jpg?tr=cm-pad_resize,w-600" height="500px" width="100%">
+</div>    
+<div class="image-2">
+<img src="https://images-static.nykaa.com/creatives/ac354750-9bf2-4fe1-baca-714289780a33/default.jpg?tr=cm-pad_resize,w-600" height="500px" width="100%">    
+</div>    
+<div class="image-2">
+<img src="https://images-static.nykaa.com/creatives/a9c23f9e-1f5c-4360-ae92-f6a899636264/default.jpg?tr=cm-pad_resize,w-600" height="500px" width="100%">    
+</div>    
+    
+</div>    
+    
+<div id="box">
+<img src="https://images-static.nykaa.com/uploads/2a9a73a7-4642-4f26-ae62-8131cf5d66ba.jpg?tr=cm-pad_resize,w-1200" height="100px" width="100%">    
+</div>    
+    
+<div class="box-1">
+  
+<div class="h" id="c"><center>IN THE SPOTLIGHT</center></div>
+    
+<div class="h">
+<button class="img"><img src="https://images-static.nykaa.com/creatives/bc8b5d81-245e-43d5-8cd5-da98e0e241c9/default.jpg?tr=cm-pad_resize,w-200" height="260px" width="100%"></button>
+    
+<div class="a">FLAT 10% OFF<br>
+FIRST TIME EVER!</div>    
+</div>
+    
+    
+<div class="h">
+<button class="img"><img src="https://images-static.nykaa.com/creatives/a031fa8f-26e1-4fed-bbb5-5fb1d58af4b0/default.jpg?tr=cm-pad_resize,w-200" height="260px" width="100%"></button> 
+    
+<div class="a">FLAT 10% OFF<br>
+ON VIRAL GLOW!</div>        
+</div>
+    
+    
+<div class="h">
+<button class="img"><img src="https://images-static.nykaa.com/creatives/b6d5cd43-cf64-42f6-9127-372361c2f312/default.jpg?tr=cm-pad_resize,w-200" height="260px" width="100%"></button>
+    
+<div class="a">BOUJEE KITTY<br>
+EXPLORE THE RANGE</div>        
+</div>
+    
+    
+<div class="h">
+<button class="img"><img src="https://images-static.nykaa.com/creatives/2216325a-4ae8-4a38-a467-3eb198c14219/default.jpg?tr=cm-pad_resize,w-200" height="260px" width="100%"></button>
+    
+<div class="a">FREE GIFT<br>
+ON ORDERS ₹1700+</div>      
+</div>
+    
+    
+<div class="h">
+<button class="img"><img src="https://images-static.nykaa.com/creatives/56854fc0-a5d8-4b3a-865d-e3e3fd22c424/default.jpg?tr=cm-pad_resize,w-200" height="260px" width="100%"> </button>   
+    
+<div class="a">FLORAL TECH<br>
+NOW IN INDIA</div>      
+</div>
+    
+    
+<div class="h">
+<button class="img"><img src="https://images-static.nykaa.com/creatives/5889eb90-f3bd-4eac-a270-3ac4d9345f64/default.jpg?tr=cm-pad_resize,w-200" height="260px" width="100%"></button> 
+    
+<div class="a">FLAT 10% OFF<br>
+ON VIRAL GLOW!</div>       
+</div>    
+    
+    
+</div>  <br><br>  
+    
+<div class="komal">
+<img src="https://images-static.nykaa.com/uploads/dfd2b45e-d28b-43de-8ae9-394e4d887799.jpg?tr=cm-pad_resize,w-1200" height="300px" width="100%">     
+</div><br>
+    
+<div class="m">
+    
+<div class="x">
+<img src="https://images-static.nykaa.com/uploads/7ab20f2d-a6f0-461e-ae05-936b9c58a8ab.jpg?tr=cm-pad_resize,w-200">    
+</div>
+    
+    
+<div class="x">
+<img src="https://images-static.nykaa.com/uploads/38f86839-b915-44d3-89d8-3acba8291e42.jpg?tr=cm-pad_resize,w-200">    
+</div>
+    
+    
+<div class="x">
+<img src="https://images-static.nykaa.com/uploads/78158780-0a9e-4224-91cc-fd1316d5040f.jpg?tr=cm-pad_resize,w-200">    
+</div>
+    
+    
+<div class="x">
+<img src="https://images-static.nykaa.com/uploads/9ddd955e-acf7-422f-a572-e44525666f7f.jpg?tr=cm-pad_resize,w-200">    
+</div>
+    
+    
+<div class="x">
+<img src="https://images-static.nykaa.com/uploads/014ad909-fc68-4603-8452-d2027b78851e.jpg?tr=cm-pad_resize,w-200">    
+</div>    
+    
+    
+    
+</div><br><br>    
+    
+    
+<div class="o">
+<img src="https://images-static.nykaa.com/uploads/03c333a5-bb00-4067-9949-56fc752b1bfc.jpg?tr=cm-pad_resize,w-1200" height="250px" width="100%">    
+    
+</div><br><br>    
+ 
+    
+<div class="q">
+<div class="p">
+<img src="https://img.magnific.com/free-vector/realistic-cosmetic-packaging_1268-1266.jpg?semt=ais_hybrid&w=740&q=80" height="200px" width="100%">
+    
+<div class="y">COSMETIC CREAM<br>
+FLAT 10% OFF<br> 
+Rs.599/-
+</div>
+</div>    
+    
+<div class="p">
+<img src="https://img.magnific.com/premium-vector/cosmetics-product-sale-social-media-advertisement-poster-design-vector-with-blue-color_1003782-1812.jpg?semt=ais_hybrid&w=740&q=80" height="200px" width="100%"> 
+    
+<div class="y">FREE GIFT<br> 
+ON ORDER Rs.17,000+<br>
+FLAT 10% OFF    
+</div>
+</div>    
+    
+<div class="p">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2qI1oIbD3-bg-YPzncfJgHRYLz7KJnWQrK9vglKqt0arQhkEAUvELrv4&s=10" height="200px" width="100%"> 
+    
+<div class="y">MEN PERFUME<br>
+NOW IN INDIA<br>
+Rs.15,000/-
+</div>    
+</div>    
+    
+<div class="p">
+<img src="https://img.magnific.com/free-photo/cosmetic-male-beauty-products-with-display_23-2150435210.jpg?semt=ais_test_b&w=740&q=80" height="200px" width="100%">  
+    
+<div class="y">SHAMPOOS<br>
+ON VIRAL BEAUTIFUL<br>
+Rs.4670/-
+</div>    
+</div> 
+    
+<div class="p">
+<img src="https://i.pinimg.com/236x/40/d7/73/40d773227b714d599510b33e53731d35.jpg" height="200px" width="100%">
+    
+<div class="y">GLOW PERFUMES<br>
+FLAT 20% OFF<br>
+Rs.12,599/-
+</div>
+</div>    
+    
+<div class="p">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmLMYuTZBfZBq-psEs4H179KNeEyf43qL8wb2_OGK4XA&s" height="200px" width="100%">    
+    
+<div class="y">GLOW CREAM<br>
+ON VIRAL GLOW!<br>
+Rs.3,450/-
+</div>
+</div>    
+    
+<div class="p">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRVic7U0qxyexCr0BB1ie9TvNTZBgUzFcXr-yx1RQzeXMJXjjV2zwDZ07me&s=10" height="200px" width="100%">    
+    
+<div class="y">LIPSTICK<br>
+GOLDEN SHADE<br>
+Rs.15,499/-
+</div>    
+</div>    
+    
+</div> 
+    
+
+    
+    
+
+<div class="of">
+<img src="https://images-static.nykaa.com/uploads/a92254c5-066f-45b1-bdef-2646b5327335.jpg" height="100px" width="100%">    
+</div>  
+    
+    
+<div class="off">
+<div class="where">
+<img src="https://images-static.nykaa.com/uploads/0d34ed86-e7f2-4977-81af-c497ae68b01a.jpg?tr=cm-pad_resize,w-300" height="200px" width="100%">    
+</div>
+    
+<div class="where">
+<img src="https://images-static.nykaa.com/uploads/1da122a8-8fcd-40a6-a29a-62d4b95440fe.jpg?tr=cm-pad_resize,w-300" height="200px" width="100%">    
+</div>
+    
+<div class="where">
+<img src="https://images-static.nykaa.com/uploads/01336054-0f45-408b-ad0f-22cab95eb76d.jpg?tr=cm-pad_resize,w-300" height="200px" width="100%">    
+</div>
+    
+<div class="where">
+<img src="https://images-static.nykaa.com/uploads/6161b9e2-829c-48d1-aabe-cdb1b99af5cf.jpg?tr=cm-pad_resize,w-300" height="200px" width="100%">    
+</div>    
+
+</div><br>
+    
+      
+<div class="let">
+<div class="wait">
+<img src="https://images-static.nykaa.com/uploads/0a10ec40-bc45-480c-a396-ff6a47883648.png?tr=cm-pad_resize,w-300" height="200px" width="100%">    
+</div>
+    
+<div class="wait">
+<img src="https://images-static.nykaa.com/uploads/4673f8ad-057a-4531-accc-0fa8cc2f7617.jpg?tr=cm-pad_resize,w-300" height="200px" width="100%">    
+</div>
+    
+<div class="wait">
+<img src="https://images-static.nykaa.com/uploads/fd83cff0-4900-4076-9f3d-f6d6721e95f9.jpg?tr=cm-pad_resize,w-300" height="200px" width="100%">    
+</div>
+    
+<div class="wait">
+<img src="https://images-static.nykaa.com/uploads/858155b2-65f9-41be-9009-7d4a0f54d029.jpg?tr=cm-pad_resize,w-300" height="200px" width="100%">    
+</div>
+    
+</div> <br><br>
+    
+    
+<div class="not">
+<button>Explore all brands</button>    
+</div><br><br>
+    
+<div class="the">
+<img src="https://images-static.nykaa.com/uploads/1106a460-1797-4ac8-9631-aec37bd28458.jpg" height="200px" width="100%">    
+</div>  
+    
+<div class="export">
+<div class="tata">
+<img src="https://images-static.nykaa.com/uploads/06ab1844-d5b2-4399-a3f5-882f318466d6.jpg?tr=cm-pad_resize,w-300" height="400px" width="100%">    
+</div>
+    
+<div class="tata">
+<img src="https://images-static.nykaa.com/uploads/597b3513-27f2-4df9-92a9-e942a0513d56.jpg?tr=cm-pad_resize,w-300" height="400px" width="100%">    
+</div>
+    
+<div class="tata">
+<img src="https://images-static.nykaa.com/uploads/23ef0950-2d0d-4c6d-86e5-c0f12bde9e31.jpg?tr=cm-pad_resize,w-300" height="400px" width=100%>    
+</div>
+    
+<div class="tata">
+<img src="https://images-static.nykaa.com/uploads/f39c607b-e913-42ee-824c-a1c2e30a1fdf.jpg?tr=cm-pad_resize,w-300" height="400px" width="100%">    
+</div>
+    
+<div class="tata">
+<img src="https://images-static.nykaa.com/uploads/a23469c2-abbc-4aef-bca3-26d52e2f154a.jpg?tr=cm-pad_resize,w-300" height="400px" width="100%">    
+</div>
+    
+<div class="tata">
+<img src="https://images-static.nykaa.com/uploads/fbf190d3-72e6-4d35-b70e-fd00f32551d1.jpg?tr=cm-pad_resize,w-300" height="400px" width="100%">
+</div>    
+   
+</div> <br><br>   
+    
+<span class="help">
+<button>View all</button>  
+</span><br><br>
+    
+<div class="subject">
+POPULAR THIS SEASON
+</div> 
+    
+<div class="all">
+<div class="ac">
+<img src="https://images-static.nykaa.com/creatives/fefe613f-f4c0-42bd-8a8d-9a42268de9bd/default.jpg?tr=cm-pad_resize,w-600" height="300px" width="100%">
+</div>   
+    
+<div class="ac">
+<img src="https://images-static.nykaa.com/creatives/5b0a5546-83f2-431b-b180-72ace6b4679c/default.jpg?tr=cm-pad_resize,w-600" height="300px" width="100%">    
+</div>    
+    
+<div class="ac">
+<img src="https://images-static.nykaa.com/creatives/7d7646b0-b4bd-4742-857d-491c1e0c6393/default.jpg?tr=cm-pad_resize,w-600" height="300px" width="100%">
+</div>    
+</div>   <br><br> 
+    
+<div class="line">
+<img src="https://images-static.nykaa.com/uploads/18ff0b5f-3476-4d5c-b9a3-1b221f6db56a.jpg?tr=cm-pad_resize,w-1200" height="100px" width="100%">    
+</div> <br><br>  
+    
+<div class="day">
+<div class="w"><i class="fa-solid fa-envelope" id="email"></i>Get special discount on your inbox<br>
+Your Email<br>
+_____________
+</div>
+    
+<div class="w"><i class="fa-solid fa-mobile" id="home"></i>experience the nykaa mobile app</div>
+    
+<div class="w"><i class="fa-solid fa-phone" id="share"></i>for any help, you may call us at<br>
+1800-267-4444<br>
+
+(All days, 8 AM to 10 PM)</div>    
+</div>
+    
+<div class="sales">
+<div class="date">Who are we?<br><br>
+Careers<br><br>
+Authenticity<br><br>
+Press<br><br>
+Testimonials<br><br>
+Nykaa CSR<br><br>
+Sustainability<br><br>
+Responsible Disclosure<br><br>
+Investor Relations<br><br>
+Link to Smart ODR</div>
+    
+<div class="date">Help<br><br>
+Contact Us<br><br>
+Frequently asked questions<br><br>
+Store Locator<br><br>
+Cancellation & Return<br><br>
+Shipping & Delivery<br><br>
+Sell on Nykaa
+</div>    
+    
+<div class="date">
+Inspire Me<br><br>
+Beauty Book<br><br>
+Games Board<br><br>
+Buying Guides    
+</div>    
+    
+    
+<div class="date">
+Quick Links<br><br>
+Offer Zone<br><br>
+New Launches<br><br>
+Nykaa Man<br><br>
+Nykaa Fashion<br><br>
+Nykaa Pro<br><br>
+Sitemap
+</div>    
+<div class="date">
+Top Categories<br><br>
+Makeup<br><br>
+Skin<br><br>
+Hair<br><br>
+Bath & Body<br><br>
+Appliances<br><br>
+Mom and Baby<br><br>
+Health & Wellness<br><br>
+Fragrance<br><br>
+Natural<br>
+Luxe    
+</div>    
+</div>    
+    
+</body>    
+</html>
+</doctype>
